@@ -1,0 +1,106 @@
+
+:root {
+  --magic-purple-100: rgba(147, 51, 234, 0.1);
+  --magic-purple-300: rgba(147, 51, 234, 0.3);
+  --magic-purple-500: rgba(147, 51, 234, 0.5);
+  --magic-purple-700: rgba(147, 51, 234, 0.7);
+  --magic-purple-900: rgba(147, 51, 234, 0.9);
+  --parchment-light: #f4e4bc;
+  --parchment-dark: #2a2a2a;
+  --ink-color: #1a1a1a;
+}
+
+
+@keyframes pageLight {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.5; }
+}
+
+.spellbook-page {
+    position: relative;
+}
+
+.spellbook-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.1), transparent);
+    animation: pageLight 3s infinite;
+}
+
+
+/* Base styles */
+.wizard-theme {
+  font-family: 'Crimson Text', serif;
+  background-color: var(--ink-color);
+  color: var(--parchment-light);
+}
+
+/* Headers */
+.wizard-header {
+  font-family: 'MedievalSharp', cursive;
+  color: var(--magic-purple-500);
+  text-shadow: 0 0 10px var(--magic-purple-300);
+}
+
+/* Magical elements */
+.magical-glow {
+  animation: pulse 2s infinite;
+  filter: drop-shadow(0 0 5px var(--magic-purple-300));
+}
+
+/* Stat bars */
+.stat-bar {
+  background: linear-gradient(90deg, 
+    var(--magic-purple-500) 0%,
+    var(--magic-purple-700) 50%,
+    var(--magic-purple-900) 100%
+  );
+  box-shadow: 0 0 15px var(--magic-purple-300);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ink-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--magic-purple-500);
+  border-radius: 6px;
+}
+
+/* Spellbook pages */
+.spellbook-page {
+  background: linear-gradient(
+    135deg,
+    var(--parchment-dark) 0%,
+    var(--ink-color) 100%
+  );
+  border: 2px solid var(--magic-purple-300);
+  box-shadow: 0 0 20px var(--magic-purple-100);
+}
+
+/* Floating elements */
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
