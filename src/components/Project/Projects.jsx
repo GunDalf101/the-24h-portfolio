@@ -16,16 +16,16 @@ const Projects = () => {
             skills: ["React", "Three.js", "Tailwind", "Framer Motion"],
             description: "A mystical, RPG-inspired digital grimoire that showcases my legendary quests and arcane studies. This interactive portfolio features immersive animations, 3D elements, and an enchanting design that brings my projects to life.",
             image: "/projects/portfolio.jpg",
-            difficulty: "Adventurer",
+            difficulty: "Heroic",
             completion: "100%",
-            demoLink: "#",
-            githubLink: "#",
+            demoLink: "https://www.gundalfs-lair.tech/",
+            githubLink: "https://github.com/GunDalf101/the-24h-portfolio",
         },
         {
             id: 2,
             title: "Trandadan: The Digital Odyssey",
             type: "Arcane Study",
-            skills: ["React", "Django", "Postgres", "Three.js", "Docker"],
+            skills: ["React", "Django", "DRF", "Postgres", "Three.js", "Docker", "Websockets"],
             description: "This project involved crafting a full-fledged website with advanced features like JWT and OAuth2 authentication, a vibrant chat, and user management. I developed a ranking system, a data dashboard, and integrated games like 3D Pong, showcasing the power of modern web technologies.",
             image: "/projects/trandadan.jpg",
             difficulty: "Mythic",
@@ -37,7 +37,7 @@ const Projects = () => {
             id: 3,
             title: "Inception: The Virtual Realm",
             type: "Arcane Study",
-            skills: ["Docker", "System Administration", "NGINX", "WordPress"],
+            skills: ["Docker", "System Administration", "NGINX", "WordPress", "Mariadb"],
             description: "In this project, I crafted a virtual infrastructure using Docker, creating a symphony of containers. Each service, from NGINX with TLS enchantments to a WordPress realm powered by MariaDB, was orchestrated in a virtual machine, demonstrating my skills in system administration.",
             image: "/projects/inception.jpg",
             difficulty: "Heroic",
@@ -49,7 +49,7 @@ const Projects = () => {
             id: 4,
             title: "ft_irc: The Communication Conclave",
             type: "Arcane Study",
-            skills: ["C++", "Networking", "IRC Protocol"],
+            skills: ["C++", "Networking", "IRC Protocol", "Socket Programming"],
             description: "I developed my own IRC server, a bastion of real-time communication, using C++98. This project involved creating a realm where messages flow like magic, with channels, private messages, and operator commands to maintain order in the digital domain.",
             image: "/projects/ft_irc.jpg",
             difficulty: "Legendary",
@@ -61,7 +61,7 @@ const Projects = () => {
             id: 5,
             title: "Cub3D: The Arcane Arena",
             type: "Arcane Study",
-            skills: ["C", "OpenGL", "Game Design"],
+            skills: ["C", "MLX", "Game Design", "Maths"],
             description: "In this completed project, I ventured into a pixelated labyrinth, enhancing it with projectiles, enemies, and enchanted textures. I implemented doors and a mystical UI to manage health and mana, allowing for spellcasting and melee attacks. The realm is alive with floor and ceiling textures, offering a thrilling combat experience.",
             image: "/projects/cub3d.jpg",
             difficulty: "Heroic",
@@ -703,28 +703,24 @@ const QuestStats = ({ project }) => (
             Quest Statistics
         </h4>
         <div className="grid grid-cols-2 gap-4">
-            {/* Completion Status */}
             <StatItem 
                 label="Quest Status" 
                 value={project.completion} 
                 icon="🎯"
             />
             
-            {/* Difficulty Rating */}
             <StatItem 
                 label="Challenge Level" 
                 value={project.difficulty} 
                 icon="⚔️"
             />
             
-            {/* Skills Count */}
             <StatItem 
                 label="Skills Mastered" 
                 value={`${project.skills.length} Skills`} 
                 icon="📚"
             />
             
-            {/* Project Type */}
             <StatItem 
                 label="Quest Type" 
                 value={project.type} 
