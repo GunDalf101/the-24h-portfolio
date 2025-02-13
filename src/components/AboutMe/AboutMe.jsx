@@ -227,8 +227,14 @@ const WizardTower = () => {
     );
 };
 
-const MobileNav = ({ activePage, onPageChange }) => {
+const SocialHub = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const socialLinks = [
+        { name: 'GitHub', icon: '⚡', url: 'https://github.com/GunDalf101' },
+        { name: 'LinkedIn', icon: '💼', url: 'https://www.linkedin.com/in/mouad-bennani-a4302a208/' },
+        { name: 'Twitter', icon: '🐦', url: 'https://x.com/GunDalf382641' }
+    ];
 
     return (
         <motion.div
@@ -241,7 +247,7 @@ const MobileNav = ({ activePage, onPageChange }) => {
                 className="w-12 h-12 bg-purple-900/90 rounded-full flex items-center justify-center
                    border border-purple-500 shadow-lg backdrop-blur-sm"
             >
-                <span className="text-2xl">📖</span>
+                <span className="text-2xl">🔗</span>
             </button>
 
             <AnimatePresence>
@@ -253,18 +259,18 @@ const MobileNav = ({ activePage, onPageChange }) => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.9 }}
                     >
-                        {['Character', 'Abilities'].map((page, index) => (
-                            <button
-                                key={page}
-                                onClick={() => {
-                                    onPageChange(index);
-                                    setIsOpen(false);
-                                }}
-                                className={`w-full text-left p-2 rounded-lg mb-2 last:mb-0
-                           ${activePage === index ? 'bg-purple-500/20 text-purple-300' : 'text-purple-400'}`}
+                        {socialLinks.map((link) => (
+                            <a
+                                key={link.name}
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full flex items-center gap-2 p-2 rounded-lg mb-2 last:mb-0
+                                text-purple-400 hover:bg-purple-500/20 hover:text-purple-300"
                             >
-                                {page}
-                            </button>
+                                <span>{link.icon}</span>
+                                {link.name}
+                            </a>
                         ))}
                     </motion.div>
                 )}
@@ -446,7 +452,7 @@ const AboutMe = () => {
                     </SpellbookPage>
                 </div>
             </div>
-            <MobileNav activePage={activePage} onPageChange={setActivePage} />
+            <SocialHub activePage={activePage} onPageChange={setActivePage} />
         </section>
     );
 };
