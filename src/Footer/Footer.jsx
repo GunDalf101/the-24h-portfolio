@@ -41,7 +41,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <FooterLink href="https://github.com/GunDalf101">GitHub</FooterLink>
                 <FooterLink href="https://www.linkedin.com/in/mouad-bennani-a4302a208/">LinkedIn</FooterLink>
-                <FooterLink href="https://twitter.com">Twitter</FooterLink>
+                <FooterLink href="https://x.com/GunDalf382641">Twitter</FooterLink>
               </ul>
             </div>
 

@@ -9,7 +9,7 @@ const Hero = () => {
     const socialLinks = {
         GitHub: "https://github.com/GunDalf101",
         LinkedIn: "https://www.linkedin.com/in/mouad-bennani-a4302a208/",
-        Twitter: "https://twitter.com/your-handle",
+        Twitter: "https://x.com/GunDalf382641",
     };
 
     useEffect(() => {

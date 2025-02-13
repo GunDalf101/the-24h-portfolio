@@ -392,10 +392,10 @@ const AboutMe = () => {
                                 </h4>
                                 <div className="space-y-2">
                                     <p className="font-medieval text-purple-400">
-                                        Alignment: {CHARACTER_DETAILS.name}
+                                        Name: {CHARACTER_DETAILS.name}
                                     </p>
                                     <p className="font-medieval text-purple-400">
-                                        Class: Computer Science Student
+                                        Class: Digital Wizard Apprentice
                                     </p>
                                 </div>
 

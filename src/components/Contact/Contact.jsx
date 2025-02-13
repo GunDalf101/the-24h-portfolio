@@ -142,7 +142,7 @@ const ContactInfo = () => {
                         <div className="flex space-x-4">
                             <SocialLink icon="🔮" href="https://www.linkedin.com/in/mouad-bennani-a4302a208/" label="LinkedIn" />
                             <SocialLink icon="📜" href="https://github.com/GunDalf101" label="GitHub" />
-                            <SocialLink icon="⚔️" href="#" label="Twitter" />
+                            <SocialLink icon="⚔️" href="https://x.com/GunDalf382641" label="Twitter" />
                         </div>
                     </div>
 

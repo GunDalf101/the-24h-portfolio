@@ -659,27 +659,45 @@ const SkillBadge = ({ skill }) => (
     </motion.span>
 );
 
-const ActionButton = ({ href, icon, text, primary }) => (
-    <motion.a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`
-            block w-full px-6 py-3 rounded-lg font-medievalsharp text-center relative group overflow-hidden
-            ${primary 
-                ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' 
-                : 'border-2 border-purple-500 text-purple-400'
-            }
-        `}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-    >
-        <div className="absolute inset-0 bg-white/20 transform -skew-x-12 translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
-        <span className="relative flex items-center justify-center gap-2">
-            {icon} {text}
-        </span>
-    </motion.a>
-);
+const ActionButton = ({ href, icon, text, primary }) => {
+    const isUnavailable = href === "#";
+
+    const baseClasses = `
+        block w-full px-6 py-3 rounded-lg font-medievalsharp text-center relative group overflow-hidden
+        ${primary 
+            ? 'bg-gradient-to-r from-purple-600 to-pink-600' 
+            : 'border-2 border-purple-500'
+        }
+    `;
+
+    const availabilityClasses = isUnavailable
+        ? 'opacity-50 cursor-not-allowed text-gray-400'
+        : 'text-white hover:scale-102 active:scale-98';
+
+    return (
+        <motion.a
+            href={isUnavailable ? undefined : href}
+            target={isUnavailable ? undefined : "_blank"}
+            rel={isUnavailable ? undefined : "noopener noreferrer"}
+            className={`${baseClasses} ${availabilityClasses}`}
+            whileHover={isUnavailable ? {} : { scale: 1.02 }}
+            whileTap={isUnavailable ? {} : { scale: 0.98 }}
+            onClick={(e) => {
+                if (isUnavailable) {
+                    e.preventDefault();
+                }
+            }}
+        >
+            <div className={`absolute inset-0 bg-white/20 transform -skew-x-12 translate-x-full 
+                ${isUnavailable ? '' : 'group-hover:translate-x-0'} 
+                transition-transform duration-500`} 
+            />
+            <span className="relative flex items-center justify-center gap-2">
+                {icon} {isUnavailable ? 'Demo Unavailable' : text}
+            </span>
+        </motion.a>
+    );
+};
 
 const QuestProgress = ({ completion, difficulty }) => (
     <div className="space-y-4">
