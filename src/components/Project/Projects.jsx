@@ -17,7 +17,7 @@ const Projects = () => {
             description: "A mystical, RPG-inspired digital grimoire that showcases my legendary quests and arcane studies. This interactive portfolio features immersive animations, 3D elements, and an enchanting design that brings my projects to life.",
             image: "/projects/portfolio.jpg",
             difficulty: "Heroic",
-            completion: "100%",
+            completion: "80%",
             demoLink: "https://www.gundalfs-lair.tech/",
             githubLink: "https://github.com/GunDalf101/the-24h-portfolio",
         },
