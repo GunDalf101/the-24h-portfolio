@@ -460,8 +460,9 @@ const AboutMe = () => {
 const SpellbookPage = ({ children, isLeftPage, isActive, onClick }) => {
     return (
         <motion.div
-            className={`w-full lg:w-1/2 min-h-[600px] cursor-pointer transition-all duration-100
+            className={`w-full lg:w-1/2 min-h-[600px] transition-all duration-100
                        ${isActive ? 'scale-105 z-10' : 'scale-100 z-0 opacity-80'}`}
+            style={{ cursor: "url('/gundalf-cursor.png'), pointer" }}
             initial={{ opacity: 0, x: isLeftPage ? -100 : 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             whileHover={{ scale: isActive ? 1.05 : 1.02 }}

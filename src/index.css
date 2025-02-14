@@ -20,6 +20,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  cursor: url('/staff-cursor.png'), auto;
+}
+
+button:hover {
+  cursor: url('/gundalf-cursor.png'), pointer;
 }
 
 #root {

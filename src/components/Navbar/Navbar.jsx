@@ -61,7 +61,7 @@ const Navbar = () => {
       <motion.button
         onClick={() => handleNavClick(id)}
         className={`
-          relative flex items-center space-x-2 px-4 py-2 rounded-xl cursor-pointer
+          relative flex items-center space-x-2 px-4 py-2 rounded-xl
           transition-all duration-300 backdrop-blur-sm
           ${activeSection === id 
             ? "text-purple-100 bg-white/10 shadow-[inset_0_0_20px_rgba(139,92,246,0.15)]" 

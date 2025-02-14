@@ -92,8 +92,8 @@ const MagicalScroll = ({ school, isExpanded, onToggle }) => {
             <motion.div
                 className={`relative scroll-parchment magical-glow
                            ${isExpanded ? 'h-auto' : 'h-[300px]'}
-                           rounded-lg overflow-hidden cursor-pointer`}
-
+                           rounded-lg overflow-hidden`}
+                style={{ cursor: "url('/gundalf-cursor.png'), pointer" }}
                 whileHover={{ scale: isExpanded ? 1 : 1.05 }}
                 onClick={() => !isExpanded && onToggle(school.id)}
                 onHoverStart={handleHover}
