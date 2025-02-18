@@ -38,7 +38,7 @@ const SkillTree = () => {
                                 id: 'css3',
                                 name: 'CSS3',
                                 description: "Styling enchantments for visual appeal",
-                                proficiency: 85,
+                                proficiency: 90,
                                 icon: "🎨",
                                 requirements: ['html5']
                             },
@@ -46,7 +46,7 @@ const SkillTree = () => {
                                 id: 'react_js',
                                 name: 'React',
                                 description: "Component-based sorcery for dynamic interfaces",
-                                proficiency: 88,
+                                proficiency: 80,
                                 icon: "⚛️",
                                 requirements: ['html5', 'css3']
                             },
@@ -54,7 +54,7 @@ const SkillTree = () => {
                                 id: 'tailwind_css',
                                 name: 'Tailwind CSS',
                                 description: "Utility-first styling magic",
-                                proficiency: 80,
+                                proficiency: 90,
                                 icon: "🎭",
                                 requirements: ['css3']
                             },
@@ -62,7 +62,7 @@ const SkillTree = () => {
                                 id: 'three_js',
                                 name: 'Three.js',
                                 description: "3D wizardry in web development",
-                                proficiency: 75,
+                                proficiency: 70,
                                 icon: "🎥",
                                 requirements: ['javascript']
                             },
@@ -86,7 +86,7 @@ const SkillTree = () => {
                                 id: 'node_js',
                                 name: 'Node.js',
                                 description: "JavaScript enchantments for server-side magic",
-                                proficiency: 85,
+                                proficiency: 80,
                                 icon: "🟢",
                                 requirements: []
                             },
@@ -102,7 +102,7 @@ const SkillTree = () => {
                                 id: 'django',
                                 name: 'Django',
                                 description: "Python framework for robust backend structures",
-                                proficiency: 85,
+                                proficiency: 80,
                                 icon: "🐍",
                                 requirements: []
                             },
@@ -110,7 +110,7 @@ const SkillTree = () => {
                                 id: 'postgresql',
                                 name: 'PostgreSQL',
                                 description: "Relational database wizardry",
-                                proficiency: 75,
+                                proficiency: 70,
                                 icon: "🐘",
                                 requirements: []
                             },
@@ -143,7 +143,7 @@ const SkillTree = () => {
                                 id: 'docker_container',
                                 name: 'Docker',
                                 description: "Containerization magic for consistent deployments",
-                                proficiency: 85,
+                                proficiency: 90,
                                 icon: "🐳",
                                 requirements: []
                             },
@@ -151,7 +151,7 @@ const SkillTree = () => {
                                 id: 'nginx',
                                 name: 'NGINX',
                                 description: "Reverse proxy and web server mastery",
-                                proficiency: 80,
+                                proficiency: 70,
                                 icon: "🚀",
                                 requirements: []
                             },
@@ -159,7 +159,7 @@ const SkillTree = () => {
                                 id: 'virtualization_tech',
                                 name: 'Virtualization Technologies',
                                 description: "Proficiency in setting up virtual environments",
-                                proficiency: 75,
+                                proficiency: 80,
                                 icon: "🖥️",
                                 requirements: []
                             }
@@ -241,7 +241,7 @@ const SkillTree = () => {
                                 "id": "c_basics",
                                 "name": "C Basics",
                                 "description": "Understanding of variables, control structures, and memory management",
-                                "proficiency": 95,
+                                "proficiency": 99,
                                 "icon": "🔧",
                                 "requirements": []
                             },
@@ -249,7 +249,7 @@ const SkillTree = () => {
                                 "id": "c_advanced",
                                 "name": "Advanced C",
                                 "description": "Advanced techniques like pointers, structs, and file I/O",
-                                "proficiency": 90,
+                                "proficiency": 95,
                                 "icon": "🔍",
                                 "requirements": []
                             },
@@ -265,7 +265,7 @@ const SkillTree = () => {
                                 "id": "cpp_basics",
                                 "name": "C++ Basics",
                                 "description": "Mastering syntax, functions, and control flow",
-                                "proficiency": 90,
+                                "proficiency": 95,
                                 "icon": "⚡",
                                 "requirements": []
                             },
@@ -273,7 +273,7 @@ const SkillTree = () => {
                                 "id": "cpp_oop",
                                 "name": "Object-Oriented C++",
                                 "description": "Understanding of classes, inheritance, and polymorphism",
-                                "proficiency": 85,
+                                "proficiency": 95,
                                 "icon": "🎯",
                                 "requirements": []
                             }

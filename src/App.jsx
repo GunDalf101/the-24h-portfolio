@@ -10,12 +10,14 @@ import SkillTree from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Footer from './Footer/Footer';
 import WizardTrainingGrounds from './components/Education/Education';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
     <Router>
       <ParallaxProvider>
         <div className="relative bg-gray-900 text-white">
+          <Analytics />
           <Navbar />
           <main className="relative">
             <section id="home">
