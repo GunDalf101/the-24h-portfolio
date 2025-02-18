@@ -11,7 +11,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './Footer/Footer';
 import WizardTrainingGrounds from './components/Education/Education';
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
   return (
@@ -19,7 +18,6 @@ const App = () => {
       <ParallaxProvider>
         <div className="relative bg-gray-900 text-white">
           <Analytics />
-          <SpeedInsights/>
           <Navbar />
           <main className="relative">
             <section id="home">
