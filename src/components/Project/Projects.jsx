@@ -11,6 +11,18 @@ const Projects = () => {
     const PROJECTS = [
         {
             id: 1,
+            title: "Realms of Imagination: AI Text Adventure",
+            type: "Hero's Journey",
+            skills: ["React", "Node.js", "MongoDB", "OpenAI", "TailwindCSS", "WebSockets"],
+            description: "An immersive AI-powered text adventure where every choice shapes your destiny. This project features dynamic storytelling, real-time game state management, and a modern UI with glass-morphism effects. The game adapts to player choices using advanced AI, creating unique narratives for each adventurer.",
+            image: "/projects/ai-rpg.png",
+            difficulty: "Mythic",
+            completion: "50%",
+            demoLink: "#",
+            githubLink: "https://github.com/GunDalf101/AI-TEXT-RPG-PROTOTYPE",
+        },
+        {
+            id: 2,
             title: "The Arcane Codex: My Portfolio",
             type: "Hero's Journey",
             skills: ["React", "Three.js", "Tailwind", "Framer Motion"],
@@ -22,7 +34,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/the-24h-portfolio",
         },
         {
-            id: 2,
+            id: 3,
             title: "Trandadan: The Digital Odyssey",
             type: "Arcane Study",
             skills: ["React", "Django", "DRF", "Postgres", "Three.js", "Docker", "Websockets"],
@@ -34,7 +46,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/PERFECT_TranDaDan.git",
         },
         {
-            id: 3,
+            id: 4,
             title: "Inception: The Virtual Realm",
             type: "Arcane Study",
             skills: ["Docker", "System Administration", "NGINX", "WordPress", "Mariadb"],
@@ -46,7 +58,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/inception.git",
         },
         {
-            id: 4,
+            id: 5,
             title: "ft_irc: The Communication Conclave",
             type: "Arcane Study",
             skills: ["C++", "Networking", "IRC Protocol", "Socket Programming"],
@@ -58,7 +70,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/IRC_SERVER.git",
         },
         {
-            id: 5,
+            id: 6,
             title: "Cub3D: The Arcane Arena",
             type: "Arcane Study",
             skills: ["C", "MLX", "Game Design", "Maths"],
@@ -70,7 +82,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/cub3d.git",
         },
         {
-            id: 6,
+            id: 7,
             title: "Minishell: The Command Conclave",
             type: "Arcane Study",
             skills: ["C", "Unix", "Shell Scripting"],
@@ -82,6 +94,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/HomebrewShell.git",
         },
     ];
+    
     
     
 
