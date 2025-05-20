@@ -55,7 +55,7 @@ const Projects = () => {
             image: "/projects/trandadan.jpg",
             difficulty: "Legendary",
             completion: "100%",
-            demoLink: "http://trandadan.live/",
+            demoLink: "https://trandadan.live/",
             githubLink: "https://github.com/GunDalf101/PERFECT_TranDaDan.git",
         },
         {
