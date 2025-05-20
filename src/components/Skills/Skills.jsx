@@ -127,6 +127,87 @@ const SkillTree = () => {
                 ]
             },
             {
+                id: 'data_science',
+                title: "Data Science & Machine Learning",
+                description: "Harnessing the power of data and algorithms",
+                icon: "📊",
+                color: "from-purple-500 to-blue-500",
+                children: [
+                    {
+                        id: 'data_analysis',
+                        title: "Data Analysis",
+                        description: "Extracting insights from raw data",
+                        icon: "🔍",
+                        skills: [
+                            {
+                                id: 'numpy',
+                                name: 'NumPy',
+                                description: "Numerical computing and array manipulation",
+                                proficiency: 80,
+                                icon: "🔢",
+                                requirements: []
+                            },
+                            {
+                                "id": "pandas",
+                                "name": "Pandas",
+                                "description": "Data manipulation and analysis",
+                                "proficiency": 80,
+                                "icon": "📊",
+                                "requirements": []
+                            },
+                            {
+                                "id": "sqlalchemy",
+                                "name": "SQLAlchemy",
+                                "description": "Database toolkit and ORM for Python",
+                                "proficiency": 60,
+                                "icon": "🗄️",
+                                "requirements": []
+                            },
+                            {
+                                "id": "matplotlib",
+                                "name": "Matplotlib",
+                                "description": "Data visualisation and plotting",
+                                "proficiency": 80,
+                                "icon": "📈",
+                                "requirements": []
+                            },
+                            {
+                                "id": "seaborn",
+                                "name": "Seaborn",
+                                "description": "Statistical data visualization",
+                                "proficiency": 60,
+                                "icon": "📊",
+                                "requirements": []
+                            }
+                        ]
+                    },
+                    {
+                        id: 'machine_learning',
+                        title: "Machine Learning",
+                        description: "Building predictive models and algorithms",
+                        icon: "🤖",
+                        skills: [
+                            {
+                                id: 'scikit_learn',
+                                name: 'Scikit-learn',
+                                description: "Machine learning library for Python",
+                                proficiency: 80,
+                                icon: "📚",
+                                requirements: []
+                            },
+                            {
+                                id: 'pytorch',
+                                name: 'PyTorch',
+                                description: "Deep learning framework for building neural networks",
+                                proficiency: 80,
+                                icon: "🔥",
+                                requirements: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 id: 'devops_mastery',
                 title: "DevOps Mastery",
                 description: "Automation and deployment sorcery",
@@ -301,30 +382,7 @@ const SkillTree = () => {
                                 "icon": "🔧",
                                 "requirements": []
                             },
-                            {
-                                "id": "pandas",
-                                "name": "Pandas",
-                                "description": "Data manipulation and analysis",
-                                "proficiency": 70,
-                                "icon": "📊",
-                                "requirements": []
-                            },
-                            {
-                                "id": "sqlalchemy",
-                                "name": "SQLAlchemy",
-                                "description": "Database toolkit and ORM for Python",
-                                "proficiency": 60,
-                                "icon": "🗄️",
-                                "requirements": []
-                            },
-                            {
-                                "id": "matplotlib",
-                                "name": "Matplotlib",
-                                "description": "Data visualisation and plotting",
-                                "proficiency": 60,
-                                "icon": "📈",
-                                "requirements": []
-                            }
+                            
                         ]
                     },
                     {

@@ -8,45 +8,58 @@ const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState(null);
 
+    const [showAll, setShowAll] = useState(false);
     const PROJECTS = [
         {
             id: 1,
-            title: "Realms of Imagination: AI Text Adventure",
-            type: "Hero's Journey",
-            skills: ["React", "Node.js", "MongoDB", "OpenAI", "TailwindCSS", "WebSockets"],
-            description: "An immersive AI-powered text adventure where every choice shapes your destiny. This project features dynamic storytelling, real-time game state management, and a modern UI with glass-morphism effects. The game adapts to player choices using advanced AI, creating unique narratives for each adventurer.",
-            image: "/projects/ai-rpg.png",
-            difficulty: "Mythic",
-            completion: "50%",
+            title: "Scickit-learn playground",
+            type: "Arcane Study",
+            skills: ["Python", "Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+            description: "A mystical playground where I explored the arcane arts of machine learning using Scikit-learn. This project showcases my ability to manipulate data, visualize insights, and conjure predictive models.",
+            image: "/projects/scikit-learn-playground.jpg",
+            difficulty: "Adventurer",
+            completion: "100%",
             demoLink: "#",
-            githubLink: "https://github.com/GunDalf101/AI-TEXT-RPG-PROTOTYPE",
+            githubLink: "https://github.com/GunDalf101/SCIKIT-LEARN-PLAYGROUND.git",
         },
         {
             id: 2,
+            title: "ML from Scratch: The Arcane Algorithm",
+            type: "Arcane Study",
+            skills: ["Python", "NumPy", "Pandas", "Matplotlib"],
+            description: "A mystical journey into the realm of machine learning, where I crafted algorithms from the ground up. This project showcases my understanding of the underlying principles of ML, including linear regression, logistic regression, and decision trees, all without the aid of external libraries.",
+            image: "/projects/ml-from-scratch.jpg",
+            difficulty: "Heroic",
+            completion: "100%",
+            demoLink: "#",
+            githubLink: "https://github.com/GunDalf101/ML_from_scratch.git",
+        },
+        {
+            id: 3,
             title: "The Arcane Codex: My Portfolio",
             type: "Hero's Journey",
             skills: ["React", "Three.js", "Tailwind", "Framer Motion"],
             description: "A mystical, RPG-inspired digital grimoire that showcases my legendary quests and arcane studies. This interactive portfolio features immersive animations, 3D elements, and an enchanting design that brings my projects to life.",
             image: "/projects/portfolio.jpg",
             difficulty: "Heroic",
-            completion: "80%",
+            completion: "100%",
             demoLink: "https://www.gundalfs-lair.tech/",
             githubLink: "https://github.com/GunDalf101/the-24h-portfolio",
         },
         {
-            id: 3,
+            id: 4,
             title: "Trandadan: The Digital Odyssey",
             type: "Arcane Study",
             skills: ["React", "Django", "DRF", "Postgres", "Three.js", "Docker", "Websockets"],
             description: "This project involved crafting a full-fledged website with advanced features like JWT and OAuth2 authentication, a vibrant chat, and user management. I developed a ranking system, a data dashboard, and integrated games like 3D Pong, showcasing the power of modern web technologies.",
             image: "/projects/trandadan.jpg",
-            difficulty: "Mythic",
+            difficulty: "Legendary",
             completion: "100%",
-            demoLink: "#",
+            demoLink: "http://trandadan.live/",
             githubLink: "https://github.com/GunDalf101/PERFECT_TranDaDan.git",
         },
         {
-            id: 4,
+            id: 5,
             title: "Inception: The Virtual Realm",
             type: "Arcane Study",
             skills: ["Docker", "System Administration", "NGINX", "WordPress", "Mariadb"],
@@ -58,7 +71,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/inception.git",
         },
         {
-            id: 5,
+            id: 6,
             title: "ft_irc: The Communication Conclave",
             type: "Arcane Study",
             skills: ["C++", "Networking", "IRC Protocol", "Socket Programming"],
@@ -70,7 +83,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/IRC_SERVER.git",
         },
         {
-            id: 6,
+            id: 7,
             title: "Cub3D: The Arcane Arena",
             type: "Arcane Study",
             skills: ["C", "MLX", "Game Design", "Maths"],
@@ -82,7 +95,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/cub3d.git",
         },
         {
-            id: 7,
+            id: 8,
             title: "Minishell: The Command Conclave",
             type: "Arcane Study",
             skills: ["C", "Unix", "Shell Scripting"],
@@ -165,7 +178,7 @@ const Projects = () => {
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {PROJECTS.map((project, index) => (
+                    {PROJECTS.slice(0, showAll ? PROJECTS.length : 3).map((project, index) => (
                         <ProjectCard
                             key={project.id}
                             project={project}
@@ -174,6 +187,57 @@ const Projects = () => {
                         />
                     ))}
                 </div>
+                
+                {PROJECTS.length > 3 && (
+                    <motion.div 
+                        className="mt-12 flex justify-center"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        {!showAll ? (
+                            <motion.button
+                                onClick={() => setShowAll(true)}
+                                className="px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 
+                                    rounded-lg font-medievalsharp text-white relative overflow-hidden
+                                    border border-purple-400/50 shadow-lg shadow-purple-500/20"
+                                whileHover={{ 
+                                    scale: 1.05,
+                                    boxShadow: "0 0 25px rgba(147, 51, 234, 0.6)"
+                                }}
+                                whileTap={{ scale: 0.98 }}
+                                layoutId="toggle-button"
+                            >
+                                <SparkleEffect />
+                                <span className="relative flex items-center justify-center gap-3">
+                                    <span className="text-xl">📜</span>
+                                    <span>See More Quests</span>
+                                    <span className="text-xl">✨</span>
+                                </span>
+                            </motion.button>
+                        ) : (
+                            <motion.button
+                                onClick={() => setShowAll(false)}
+                                className="px-8 py-4 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 
+                                    rounded-lg font-medievalsharp text-white relative overflow-hidden
+                                    border border-yellow-400/50 shadow-lg shadow-yellow-500/20"
+                                whileHover={{ 
+                                    scale: 1.05,
+                                    boxShadow: "0 0 25px rgba(255, 215, 0, 0.5)"
+                                }}
+                                whileTap={{ scale: 0.98 }}
+                                layoutId="toggle-button"
+                            >
+                                <SparkleEffect />
+                                <span className="relative flex items-center justify-center gap-3">
+                                    <span className="text-xl">🗞️</span>
+                                    <span>Hide Quests</span>
+                                    <span className="text-xl">📜</span>
+                                </span>
+                            </motion.button>
+                        )}
+                    </motion.div>
+                )}
             </div>
 
             <ProjectModal
