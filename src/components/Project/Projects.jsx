@@ -11,8 +11,20 @@ const Projects = () => {
     const [showAll, setShowAll] = useState(false);
     const PROJECTS = [
         {
-            id: 1,
-            title: "Scickit-learn playground",
+            id: 9,
+            title: "Banking Churn Predictor",
+            type: "Arcane Study",
+            skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"],
+            description: "In this project, I delved into the mystical realm of customer churn prediction. Using Python and various libraries, I analyzed data to predict customer behavior and visualize insights, showcasing my skills in data manipulation and machine learning.",
+            image: "/projects/churn-prediction.jpg",
+            difficulty: "Adventurer",
+            completion: "100%",
+            demoLink: "https://gundalfs-churn-predictor.streamlit.app/",
+            githubLink: "https://github.com/GunDalf101/Churn_Predictor.git"
+        },
+        {
+            id: 8,
+            title: "Scikit-learn Playground",
             type: "Arcane Study",
             skills: ["Python", "Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
             description: "A mystical playground where I explored the arcane arts of machine learning using Scikit-learn. This project showcases my ability to manipulate data, visualize insights, and conjure predictive models.",
@@ -23,8 +35,8 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/SCIKIT-LEARN-PLAYGROUND.git",
         },
         {
-            id: 2,
-            title: "ML from Scratch: The Arcane Algorithm",
+            id: 7,
+            title: "ML from Scratch: The Arcane Algorithms",
             type: "Arcane Study",
             skills: ["Python", "NumPy", "Pandas", "Matplotlib"],
             description: "A mystical journey into the realm of machine learning, where I crafted algorithms from the ground up. This project showcases my understanding of the underlying principles of ML, including linear regression, logistic regression, and decision trees, all without the aid of external libraries.",
@@ -35,7 +47,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/ML_from_scratch.git",
         },
         {
-            id: 3,
+            id: 6,
             title: "The Arcane Codex: My Portfolio",
             type: "Hero's Journey",
             skills: ["React", "Three.js", "Tailwind", "Framer Motion"],
@@ -47,7 +59,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/the-24h-portfolio",
         },
         {
-            id: 4,
+            id: 5,
             title: "Trandadan: The Digital Odyssey",
             type: "Arcane Study",
             skills: ["React", "Django", "DRF", "Postgres", "Three.js", "Docker", "Websockets"],
@@ -59,7 +71,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/PERFECT_TranDaDan.git",
         },
         {
-            id: 5,
+            id: 4,
             title: "Inception: The Virtual Realm",
             type: "Arcane Study",
             skills: ["Docker", "System Administration", "NGINX", "WordPress", "Mariadb"],
@@ -71,7 +83,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/inception.git",
         },
         {
-            id: 6,
+            id: 3,
             title: "ft_irc: The Communication Conclave",
             type: "Arcane Study",
             skills: ["C++", "Networking", "IRC Protocol", "Socket Programming"],
@@ -83,7 +95,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/IRC_SERVER.git",
         },
         {
-            id: 7,
+            id: 2,
             title: "Cub3D: The Arcane Arena",
             type: "Arcane Study",
             skills: ["C", "MLX", "Game Design", "Maths"],
@@ -95,7 +107,7 @@ const Projects = () => {
             githubLink: "https://github.com/GunDalf101/cub3d.git",
         },
         {
-            id: 8,
+            id: 1,
             title: "Minishell: The Command Conclave",
             type: "Arcane Study",
             skills: ["C", "Unix", "Shell Scripting"],
